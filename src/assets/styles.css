@@ -1,0 +1,157 @@
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import '~antd/dist/antd.css';
+@font-face {
+    font-family: 'Caveat';
+    src: url('Caveat-Regular.eot');
+    src: local('Caveat Regular'), local('Caveat-Regular'), url('Caveat-Regular.eot?#iefix') format('embedded-opentype'), url('Caveat-Regular.woff') format('woff'), url('Caveat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("Inter-Regular.woff2?v=3.19") format("woff2"), url("Inter-Regular.woff?v=3.19") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("Inter-Medium.woff2?v=3.19") format("woff2"), url("Inter-Medium.woff?v=3.19") format("woff");
+}
+
+:root {
+    font-family: 'Jost', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+}
+
+html, body {
+    margin: 0;
+    width: 100% !important;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-text {
+    font-family: Circe, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 100%;
+    color: #121212;
+    margin: 36px 0 24px;
+}
+
+.main-text span {
+    color: #4B75FC;
+    display: block;
+    font-size: inherit;
+}
+
+.main-text_dark {
+    color: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Regular.eot');
+    src: local('Circe'), local('Circe-Regular'), url('Circe-Regular.eot?#iefix') format('embedded-opentype'), url('Circe-Regular.woff') format('woff'), url('Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Bold.eot');
+    src: local('Circe Bold'), local('Circe-Bold'), url('Circe-Bold.eot?#iefix') format('embedded-opentype'), url('Circe-Bold.woff') format('woff'), url('Circe-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-ExtraBold.eot');
+    src: local('Circe ExtraBold'), local('Circe-ExtraBold'), url('Circe-ExtraBold.eot?#iefix') format('embedded-opentype'), url('Circe-ExtraBold.woff') format('woff'), url('Circe-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.eot');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('Montserrat-Regular.woff2') format('woff2'), url('Montserrat-Regular.woff') format('woff'), url('Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.eot');
+    src: local('Montserrat Medium'), local('Montserrat-Medium'), url('Montserrat-Medium.eot?#iefix') format('embedded-opentype'), url('Montserrat-Medium.woff2') format('woff2'), url('Montserrat-Medium.woff') format('woff'), url('Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBold.eot');
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url('Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'), url('Montserrat-SemiBold.woff2') format('woff2'), url('Montserrat-SemiBold.woff') format('woff'), url('Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.option_disabled {
+    opacity: 0.3 !important;
+    cursor: no-drop !important;
+    border: 3px solid rgba(1, 1, 1, 0.16) !important;
+}
+
+@media(max-width: 900px) {
+    .main-text {
+        font-size: 48px;
+    }
+}
+
+@media(max-width: 720px) {
+    .main-text {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 400px) {
+    .main-text {
+        font-size: 24px;
+    }
+}
+
+.app {
+    background: #F8F8F8;
+}
+
+.app_dark {
+    background: #010101;
+}

@@ -1,0 +1,408 @@
+.main__cards {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 69px auto;
+}
+
+.main__left-cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__right-cards {
+    margin-left: 90px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__card {
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 533px;
+    height: 331px;
+    position: relative;
+    /* -webkit-filter: drop-shadow(8px 8px 100px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(8px 8px 100px rgba(0, 0, 0, 0.16)); */
+}
+
+.main__card:first-of-type {
+    margin: 0;
+}
+
+
+
+.main__card-headphones {
+    top: -56px;
+    left: -84px;
+    position: absolute;
+    z-index: 3;
+   
+}
+
+.main__card-clock {
+    top: -56px;
+    right: -84px;
+    position: absolute;
+    z-index: 3;
+  
+}
+
+.main__card-bg {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.main__card-blur-cylinder {
+    z-index: 0;
+    position: absolute;
+    top: -64px;
+    left: -134px;
+}
+
+.main__card-wave {
+    z-index: 0;
+    position: absolute;
+    bottom: 29px;
+    right: -90px;
+}
+
+.main__card-planes {
+    z-index: 3;
+    position: absolute;
+    bottom: -51px;
+    left: -10px;
+   
+}
+
+.main__card-blur-big-triangle {
+    z-index: 0;
+    position: absolute;
+    top: -101px;
+    right: -235px;
+}
+
+.main__card-cylinder {
+    z-index: 0;
+    position: absolute;
+    bottom: -106px;
+    left: 131px;
+}
+
+.main__card-sphere {
+    z-index: 0;
+    position: absolute;
+    top: -26px;
+    left: 101px;
+}
+
+.main__card-text {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 100%;
+    margin: 0;
+    z-index: 2;
+    color: #FFFFFF;
+    position: absolute;
+    max-width: 363.17px;
+    top: 85px;
+    left: 107px;
+    transform: rotate(1.11deg);
+}
+
+.main__card-text_left {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 100%;
+    margin: 0;
+    z-index: 2;
+    color: #FFFFFF;
+    position: absolute;
+    max-width: 363.17px;
+    top: 80px;
+    left: 61px;
+    transform: rotate(-1.11deg);
+}
+
+.main__card-subtext_left {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin: 0;
+    z-index: 2;
+    position: absolute;
+    max-width: 363.17px;
+    top: 188px;
+    left: 66px;
+    transform: rotate(-1.11deg);
+}
+
+.main__card-map {
+    z-index: 2;
+    position: absolute;
+    bottom: -71px;
+    left: -205px;
+  
+}
+
+.main__card-blur-triangle {
+    z-index: 0;
+    position: absolute;
+    bottom: -51px;
+    right: -50px;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+    .main__card {
+        width: 394px;
+        height: 225px;
+    }
+    .main__cards {
+        max-width: 848px;
+    }
+    .main__card-headphones {
+        transform: scale(0.8);
+        top: -83px;
+        left: -111px;
+    }
+    .main__card-text {
+        font-size: 28px;
+        line-height: 100%;
+        max-width: 250px;
+        top: 46px;
+        left: 76px;
+    }
+    .main__card-wave {
+        transform: scale(0.8);
+        bottom: -10px;
+        right: -100px;
+    }
+    .main__card-blur-cylinder {
+        transform: scale(0.8);
+    }
+    .main__card-blur-triangle {
+        transform: scale(0.8);
+        bottom: -71px;
+        right: -70px;
+    }
+    .main__card-map {
+        transform: scale(0.8);
+        bottom: -71px;
+        left: -155px;
+    }
+    .main__card-clock {
+        transform: scale(0.7);
+        top: -76px;
+        right: -104px;
+    }
+    .main__card-text_left {
+        font-size: 28px;
+        line-height: 100%;
+        max-width: 250px;
+        top: 61px;
+        left: 44px;
+    }
+    .main__card-subtext_left {
+        font-size: 16px;
+        max-width: 250px;
+        top: 130px;
+        left: 44px;
+    }
+    .main__card-sphere {
+        transform: scale(0.7);
+        top: -26px;
+        left: 101px;
+    }
+    .main__card-cylinder {
+        transform: scale(0.7);
+        bottom: -106px;
+        left: 81px;
+    }
+    .main__card-blur-big-triangle {
+        transform: scale(0.7);
+        top: -101px;
+        right: -235px;
+    }
+    .main__card-planes {
+        transform: scale(0.9);
+        bottom: -51px;
+        left: -20px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .main__card {
+        width:  287px;
+        height: 166px;
+    }
+    .main__cards {
+        max-width: 621px;
+    }
+    .main__right-cards {
+        margin-left: 47px;
+    }
+    .main__card-headphones {
+        transform: scale(0.6);
+        top: -107px;
+        left: -131px;
+    }
+    .main__card-text {
+        font-size: 22px;
+        line-height: 100%;
+        max-width: 180px;
+        top: 38px;
+        left: 60px;
+    }
+    .main__card-wave {
+        transform: scale(0.6);
+        bottom: -20px;
+        right: -85px;
+    }
+    .main__card-blur-cylinder {
+        transform: scale(0.6);
+    }
+    .main__card-blur-triangle {
+        transform: scale(0.6);
+        bottom: -61px;
+        right: -60px;
+    }
+    .main__card-map {
+        transform: scale(0.6);
+        bottom: -101px;
+        left: -179px;
+    }
+    .main__card-clock {
+        transform: scale(0.6);
+        top: -96px;
+        right: -124px;
+    }
+    .main__card-text_left {
+        font-size: 22px;
+        line-height: 100%;
+        max-width: 180px;
+        top: 38px;
+        left: 44px;
+    }
+    .main__card-subtext_left {
+        font-size: 16px;
+        max-width: 250px;
+        top: 100px;
+        left: 44px;
+    }
+    .main__card-sphere {
+        transform: scale(0.6);
+        top: -36px;
+        left: 61px;
+    }
+    .main__card-cylinder {
+        transform: scale(0.6);
+        bottom: -106px;
+        left: 51px;
+    }
+    .main__card-blur-big-triangle {
+        transform: scale(0.6);
+        top: -101px;
+        right: -205px;
+    }
+    .main__card-planes {
+        transform: scale(0.6);
+        bottom: -81px;
+        left: -110px;
+    }
+}
+@media screen and (max-width: 703px) {
+    .main__card {
+        margin: 67px 0 0 0;
+        width:  287px;
+        height: 166px;
+    }
+    .main__cards {
+        max-width: 621px;
+        flex-direction: column;
+    }
+    .main__right-cards {
+        margin: 67px 0 0 0;
+    }
+
+    .main__card-headphones {
+        transform: scale(0.6);
+        top: -107px;
+        left: -131px;
+    }
+    .main__card-text {
+        font-size: 22px;
+        line-height: 100%;
+        max-width: 180px;
+        top: 38px;
+        left: 60px;
+    }
+    .main__card-wave {
+        transform: scale(0.6);
+        bottom: -20px;
+        right: -85px;
+    }
+    .main__card-blur-cylinder {
+        transform: scale(0.6);
+    }
+    .main__card-blur-triangle {
+        transform: scale(0.6);
+        bottom: -61px;
+        right: -60px;
+    }
+    .main__card-map {
+        transform: scale(0.6);
+        bottom: -101px;
+        left: -179px;
+    }
+    .main__card-clock {
+        transform: scale(0.5);
+        top: -96px;
+        right: -124px;
+    }
+    .main__card-text_left {
+        font-size: 22px;
+        line-height: 100%;
+        max-width: 180px;
+        top: 38px;
+        left: 44px;
+    }
+    .main__card-subtext_left {
+        font-size: 16px;
+        max-width: 250px;
+        top: 100px;
+        left: 44px;
+    }
+    .main__card-sphere {
+        transform: scale(0.6);
+        top: -36px;
+        left: 61px;
+    }
+    .main__card-cylinder {
+        transform: scale(0.6);
+        bottom: -106px;
+        left: 51px;
+    }
+    .main__card-blur-big-triangle {
+        transform: scale(0.6);
+        top: -101px;
+        right: -205px;
+    }
+    .main__card-planes {
+        transform: scale(0.6);
+        bottom: -81px;
+        left: -110px;
+    }
+}

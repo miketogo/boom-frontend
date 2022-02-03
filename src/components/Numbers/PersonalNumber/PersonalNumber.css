@@ -1,0 +1,533 @@
+.personal-number {
+    padding-bottom: 60px;
+}
+
+.personal-number__containers {
+    display: flex;
+    margin-top: 118px;
+}
+
+.personal-number__container {
+    position: relative;
+    background: #4B75FC;
+    border-radius: 24px;
+    width: fit-content;
+    padding: 16px 80px 26px 24px;
+    margin-left: 20px;
+}
+
+.personal-number__container:first-of-type {
+    margin: 0;
+}
+
+.personal-number__container_with-img {
+    padding: 30px 56px 30px 0;
+    max-height: 340px;
+}
+
+.personal-number__container-img {
+    position: absolute;
+    width: 470px;
+    height: 450px;
+    bottom: 38px;
+    left: 24px;
+}
+
+.personal-number__container-text {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    margin: 0 0 0 538px;
+    max-width: 424px;
+    color: #FFFFFF;
+}
+
+.personal-number__container-head-text {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 110%;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.personal-number__input {
+    border: 2px solid #010101;
+    overflow: hidden;
+    width: 288px;
+    height: 60px;
+    border-radius: 13px;
+}
+
+.personal-number__input-date {
+    padding: 18px 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #FFFFFF;
+}
+
+input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.personal-number__date-text {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+    /* or 20px */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 0 0 0 16px;
+    max-width: 231px;
+    min-width: 231px;
+}
+
+.personal-number__input-date-container {
+    margin-top: 27px;
+    display: flex;
+    flex-direction: row;
+}
+
+.personal-number__phone-input-title {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+    margin: 0;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.personal-number__transfer-phone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.personal-number__check {
+    margin: 0;
+    margin-top: 12px;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+    color: #FFFFFF;
+    display: flex;
+    cursor: pointer;
+}
+
+.personal-number__check-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.personal-number__visible-checkbox {
+    margin: 0 4px 0 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.personal-number__check-input:disabled+.personal-number__visible-checkbox {
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.personal-number__check-input:checked+.personal-number__visible-checkbox {
+    background-image: url('../../../assets/images/tick.svg');
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.personal-number__check-input:focus+.personal-number__visible-checkbox {
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.personal-number__phone-input {
+    color: #010101;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100%;
+    padding: 18px 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #FFFFFF;
+    border: 2px solid #010101 ;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    overflow: hidden;
+    width: 288px;
+    height: 76px;
+    border-radius: 13px;
+}
+.personal-number__phone-input:active{
+    border-color:#000000;
+}
+.personal-number__phone-input:focus{
+    border-color:#000000;
+}
+.personal-number__input-and-button:last-of-type {
+    margin-top: 24px;
+}
+
+.personal-number__input-and-button:first-of-type {
+    margin: 0;
+}
+
+.personal-number__input-and-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.personal-number_submit-button {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), #010101;
+    border-radius: 78px;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 21px 44px 20px;
+    margin-left: 16px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.personal-number_submit-button-text {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.personal-number_submit-button-arrow {
+    margin-left: 10px;
+}
+
+.personal-number_submit-button_disabled {
+    opacity: 0.5;
+}
+
+.personal-number_сonditions-title {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 77px;
+    color: #000000;
+    margin: 36px 0 0;
+    max-width: 765px;
+}
+
+.personal-number_сonditions-subtitle {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    margin: 18px 0 0;
+    color: rgba(1, 1, 1, 0.68);
+}
+
+.personal-number_сondition-cards {
+    display: grid;
+    grid-template-columns: 484px 625px;
+    grid-template-rows: 94px;
+    grid-auto-rows: 94px;
+    row-gap: 16px;
+    column-gap: 16px;
+    margin-top: 16px;
+}
+
+.personal-number_сondition-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    padding: 12px 14px 12px 69px;
+}
+
+.personal-number_сondition-card-number {
+    position: absolute;
+    top: 12px;
+    left: 22px;
+    width: 32px;
+    height: 32px;
+}
+
+.personal-number_сondition-card-text {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    margin: 0;
+    color: #010101;
+}
+
+.personal-number_important-card {
+    background: #FFFFFF;
+    border-radius: 24px;
+    width: 1125px;
+    margin: 18px 0 0;
+    padding: 12px;
+}
+
+.personal-number_important-title-container {
+    display: flex;
+}
+
+.personal-number_important-title {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000000;
+    margin: 0;
+}
+
+.personal-number_important-exclamation {
+    width: 31px;
+    height: 36px;
+    margin-left: 10px;
+}
+
+.personal-number_important-text {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+    margin: 18px 0 0;
+}
+.personal-number_сonditions-title_dark{
+    color: #FFFFFF;
+}
+.personal-number_сonditions-subtitle_dark{
+    color: rgba(255, 255, 255, 0.68);
+
+}
+.personal-number_сondition-card_dark{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #010101;
+}
+.personal-number_сondition-card-text_dark {
+    color: #FFFFFF;
+}
+@media screen and (max-width: 1900px) {
+    .personal-number__containers {
+        display: flex;
+        flex-direction: column;
+        margin-top: 118px;
+    }
+    .personal-number__container {
+        margin: 48px 0 0;
+        width: 100%;
+        display: flex;
+        min-height: 358px;
+    }
+    .personal-number__container:first-of-type {
+        margin: 0;
+    }
+    .personal-number__container-text {
+        max-width: 60%;
+    }
+    .personal-number__container_with-img{
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1312px) {
+    .personal-number__container {
+        flex-direction: column;
+    }
+    .personal-number_сondition-cards {
+        grid-template-columns: 430px 435px;
+        grid-template-rows: 72px;
+        grid-auto-rows: 72px;
+        row-gap: 12px;
+        column-gap: 21px;
+    }
+    .personal-number_сondition-card-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .personal-number_important-card {
+        width: 886px;
+        margin: 12px 0 0;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .personal-number_сondition-card-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .personal-number__container-img {
+        position: absolute;
+        width: 253px;
+        
+        height: 242px;
+        bottom: 26px;
+        left: 10px;
+    }
+    .personal-number__container_with-img {
+        min-height: unset;
+        height: 259px;
+        max-height: unset;
+        display: flex;
+        flex-direction: row;
+    }
+    .personal-number__container-text {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 0 0 300px;
+        align-self: center;
+    }
+    .personal-number__phone-input {
+        width: 100%;
+    }
+    .personal-number__container {
+        padding: 20px 24px;
+    }
+    .personal-number_submit-button {
+        margin: 16px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .personal-number__input-date-container {
+        flex-direction: column;
+    }
+    .personal-number__date-text {
+        margin: 16px 0 0;
+    }
+    .personal-number__input {
+        width: 100%;
+    }
+    .personal-number__input-date>input {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 100%;
+    }
+    .personal-number_сonditions-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 53px;
+        margin: 20px 0 0;
+        max-width: 100%;
+    }
+    .personal-number_сonditions-subtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .personal-number_сondition-cards {
+        grid-template-columns: 100%;
+        grid-template-rows: minmax(min-content, max-content);
+        grid-auto-rows: minmax(min-content, max-content);
+        row-gap: 16px;
+        column-gap: 21px;
+    }
+    .personal-number_сondition-card {
+        padding: 12px 24px 12px 65px;
+    }
+    .personal-number_important-card {
+        border-radius: 24px;
+        width: 100%;
+        margin: 16px 0 0;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 637px) {
+    .personal-number__container-img {
+        position: absolute;
+        top: -121px;
+        left: unset;
+        align-self: center;
+    }
+    .personal-number__container_with-img {
+        height: fit-content;
+        min-height: 348px;
+        max-height: unset;
+        display: flex;
+        flex-direction: column !important;
+    }
+    .personal-number__container-text {
+        margin: 128px 0 0 0;
+        align-self: center;
+        max-width: 100%;
+    }
+    .personal-number_submit-button {
+        padding: 21px 0;
+    }
+    .personal-number__check {
+        font-size: 18px;
+    }
+    .personal-number_сonditions-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 29px;
+        margin: 28px 0 0;
+        max-width: 100%;
+    }
+    .personal-number_important-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .personal-number_сondition-card-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

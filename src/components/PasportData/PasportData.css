@@ -1,0 +1,400 @@
+.pasport__title {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 130%;
+    margin: 0;
+    color: #010101;
+}
+
+.pasport__title_span {
+    color: #4B75FC;
+}
+
+.pasport__input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0 0;
+}
+
+.pasport__input-box_type_row {
+    margin: 16px 16px 0 0;
+}
+
+.pasport__input-box_type_row:last-of-type {
+    margin: 16px 0 0;
+}
+
+.pasport__input-title {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: rgba(1, 1, 1, 0.68);
+
+}
+
+.pasport__input-error {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: #FF0202;
+}
+
+.pasport__input-title_type_bold {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: #010101;
+
+}
+
+.pasport__input-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin: 6px 0 0;
+
+}
+
+.pasport__input-container_type_date {
+    width: 184px;
+}
+
+.pasport__input-container_type_division-code {
+    width: 158px;
+}
+
+.pasport__input-container_type_date-of-issue {
+    width: 192px;
+}
+
+.pasport__input-container_type_date-of-registration {
+    width: 192px;
+}
+
+.pasport__input-container_type_series {
+    width: auto;
+}
+
+.pasport__input {
+    border: 2px solid rgba(1, 1, 1, 0.16);
+    box-sizing: border-box;
+    border-radius: 13px;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding: 20px 17px;
+    caret-color: #0E5EF8;
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: unset;
+    font: unset;
+    text-rendering: unset;
+    letter-spacing: unset;
+    word-spacing: unset;
+    text-transform: unset;
+    text-indent: unset;
+    text-shadow: unset;
+    display: unset;
+    text-align: unset;
+    appearance: unset;
+    font-style: normal;
+    display: flex;
+    font-family: Circe, Arial, sans-serif;
+    /* !! */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100%;
+    /* identical to box height, or 24px */
+    display: flex;
+    align-items: center;
+    color: #121212;
+
+}
+
+.pasport__input_invalid{
+    border: 2px solid #FF0202;
+}
+.pasport__input:focus {
+    outline: none;
+    border: 2px solid #4B75FC;
+}
+
+
+.pasport__input_error {
+    border: 2px solid #FF0202 !important;
+}
+
+.pasport__input_valid {
+    border: 2px solid #4B75FC !important;
+}
+
+.pasport__input::placeholder {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100%;
+    color: rgba(1, 1, 1, 0.68);
+
+}
+
+
+.pasport__main-data {
+    margin: 8px 0 0;
+}
+
+.pasport__palce-of-birth {
+    margin: 48px 0 0;
+}
+
+.pasport__citizenship {
+    margin: 48px 0 40px;
+}
+
+.pasport__first-row {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pasport__registration-address {
+    margin: 48px 0 0;
+}
+
+.pasport__input-container_type_address {
+    width: 444px;
+}
+
+.pasport__input-container_type_flat {
+    width: auto;
+}
+
+.pasport__button {
+    margin: 42px 0 0;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 56px 20px;
+    background-color: #010101;
+    opacity: 0.3;
+    border-radius: 78px;
+    cursor: pointer;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pasport__button svg {
+    margin-top: 4px;
+    margin-left: 11px;
+    transform: rotate(-90deg)
+}
+
+.pasport__button_active {
+    opacity: 1;
+}
+
+.pasport__button_disabled {
+    cursor: no-drop;
+}
+
+.pasport__citizenship-radios {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px 0 0;
+}
+
+.pasport__citizenship-radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin: 15px 0 0;
+}
+
+.pasport__citizenship-radio:first-of-type {
+    margin: 0;
+}
+
+.pasport__citizenship-radio-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #6690FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px 0 0;
+}
+
+.pasport__citizenship-radio-selected {
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.pasport__citizenship-radio:hover .pasport__citizenship-radio-selected {
+    background: rgba(102, 144, 255, 0.1);
+    border: 1px solid rgba(102, 144, 255, 0.1);
+    ;
+}
+
+
+.pasport__citizenship-radio-selected_active {
+    opacity: 1 !important;
+    background: #6690FF !important;
+    border: 1px solid #6690FF !important;
+}
+
+.pasport__citizenship-radio-text {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100%;
+    color: #010101;
+    margin: 0;
+    width: fit-content;
+    transition: color 0.2s ease-in-out;
+}
+
+.pasport__citizenship-radio:hover .pasport__citizenship-radio-text {
+    color: #6690FF;
+}
+
+.pasport__citizenship-radio-selected_active:hover .pasport__citizenship-radio-text {
+    color: #010101 !important;
+}
+
+
+.pasport__input-box_type_citizenship {
+    margin: 24px 0 0;
+}
+
+.pasport__input-container_type_citizenship {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pasport__citizenship-hints {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: -2px 0 0;
+    border: 2px solid rgba(1, 1, 1, 0.16);
+    border-top: none;
+    box-sizing: border-box;
+    border-radius: 0 0 13px 13px;
+    padding: 20px 17px;
+    width: 100%;
+
+}
+
+.pasport__input_citizenship-hints {
+    border-radius: 13px 13px 0 0;
+}
+
+.pasport__input-title_type_citizenship-hints {
+    margin: 0 0 10px;
+}
+
+@media screen and (max-width: 762px) {
+    .pasport__input-container_type_division-code {
+        width: 148px;
+    }
+
+    .pasport__input-container_type_date-of-issue {
+        width: 182px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+
+    .pasport__input-box_type_row {
+        margin: 16px 0 0;
+    }
+
+
+
+    .pasport__input-container_type_series {
+        width: 200px;
+
+    }
+
+    .pasport__input-container_type_flat {
+        width: 158px;
+
+    }
+
+    .pasport__input-container_type_address {
+        width: 100%;
+    }
+
+    .pasport__first-row:first-of-type {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .pasport__title {
+        font-size: 24px;
+        line-height: 130%;
+        margin: 66px 0 0;
+    }
+    .pasport__input-container {
+        width: 100%;
+    }
+    .pasport__citizenship-radios {
+        width: 100%;
+    }
+    .pasport__first-row {
+        width: 100%;
+    }
+    .pasport__button {
+        width: 100%;
+    }
+    .pasport__input {
+        font-size: 20px;
+        padding: 16px 17px;
+    }
+    .pasport__input::placeholder {
+        font-size: 20px;
+    }
+    .pasport__citizenship-radio-text{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    .pasport__title {
+        font-size: 20px;
+        line-height: 130%;
+    }  
+    .pasport__button {
+        font-size: 16px;
+    }
+}
