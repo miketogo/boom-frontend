@@ -1,0 +1,67 @@
+{
+  "name": "caba.tech",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.10.22",
+    "@amcharts/amcharts4-geodata": "^4.1.22",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.16.12",
+    "cleave.js": "^1.6.0",
+    "framer-motion": "^4.1.17",
+    "history": "^5.0.1",
+    "html2pdf.js": "^0.10.1",
+    "js-base64": "^3.7.2",
+    "jspdf": "^2.4.0",
+    "lodash": "^4.17.21",
+    "pdfmake": "^0.2.2",
+    "public-ip": "^4.0.4",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-geocode": "^0.2.3",
+    "react-icons": "^4.2.0",
+    "react-meta-tags": "^1.0.1",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-yandex-maps": "^4.6.0",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "smooth-scrollbar": "^8.6.3",
+    "smoothscroll-polyfill": "^0.4.4",
+    "styled-components": "^5.3.0",
+    "url-utm-params": "^0.1.0",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && compress-cra",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build &&  scp -r ./build/*  miketogo66@62.84.123.91:/home/miketogo66/boom-frontend"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-macros": "^3.1.0",
+    "compress-create-react-app": "^1.1.3"
+  }
+}
